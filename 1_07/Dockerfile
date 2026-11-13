@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y curl \
 
 WORKDIR /app
 
-COPY ./script.sh .
+COPY ./script.sh /app/script.sh
+RUN chmod +x /app/script.sh
 
-CMD ["/script.sh"]
+CMD ["./script.sh"]
