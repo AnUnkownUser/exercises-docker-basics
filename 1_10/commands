@@ -1,1 +1,2 @@
-docker run --name web-server -d -p 127.0.0.1:8080:8080 web-server
+#!/bin/sh
+docker run -p 8080:8080 web-server
